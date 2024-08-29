@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissors Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    <div id="main">
+        
+    <div class="choices">
+            <div class="choice" id="rock">
+                <img src="./images/rock.png" alt="Rock">
+            </div>
+            <div class="choice" id="paper">
+                <img src="./images/paper.png" alt="Paper">
+            </div>
+            <div class="choice" id="scissors">
+                <img src="./images/scissors.png" alt="Scissors">
+            </div>
+        </div>
+
+        <button id="theme-toggle">Toggle Theme</button>
+
+        <audio id="win-sound" src="./sounds/win.mp3"></audio>
+        <audio id="lose-sound" src="./sounds/lose.mp3"></audio>
+        <audio id="draw-sound" src="./sounds/draw.mp3"></audio>
+        <audio id="click-sound" src="./sounds/click.mp3"></audio>
+    </div>
+
+    <div class="score-board">
+        <div class="score">
+            <p id="user-score">0</p>
+            <p>You</p>
+        </div>
+        <div class="score">
+            <p id="comp-score">0</p>
+            <p>Comp</p>
+        </div>
+        <div class="streak">
+            <p id="streak">Winning Streak: 0</p>
+        </div>
+        <p id="best-score">Best Score: 0</p>
+    </div>
+
+    <div id="msg">Make your move!</div>
+    <script src="app.js"></script>
+</body>
+</html>
